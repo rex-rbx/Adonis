@@ -439,7 +439,7 @@ return function(Vargs)
 					not service.UserInputService.TouchEnabled
 				then
 					if not pcall(function()
-							if not isStudio and (findService(game, "VirtualUser") or findService(game, "VirtualInputManager") or findService(game, "UGCValidationService")) then
+							if not isStudio and (findService(game, "VirtualUser") or findService(game, "VirtualInputManager") or findService(game, "UGCValidationService") or findService(game, "AppUpdateService\000") or findService(game, "AccountService\000") or findService(game, "DataModelPatchService\000") or findService(game, "OmniRecommendationsService\000")) then
 								Detected("crash", "Disallowed Services Detected")
 							end
 						end) then
@@ -699,7 +699,7 @@ return function(Vargs)
 				xpcall(function()
 					local strings = {
 						"Loaded press z to", "press x to respawn", "Fe Invisible Fling By",
-						"Diemiers#4209", "Respawning dont spam"
+						"Diemiers#4209", "Respawning dont spam", "pls join Moon Backdoor Dc!!""
 					}
 
 					for _, object in ipairs(workspace:GetChildren()) do
